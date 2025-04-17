@@ -24,8 +24,8 @@ export default function Navbar() {
                 <div className="navbar-menu">
                     <ul>
                         <li onClick={() => navigate('/')}>ホーム</li>
-                        <li onClick={() => navigate('/works')}>作成物</li>
                         <li onClick={() => navigate('/about')}>自己紹介</li>
+                        <li onClick={() => navigate('/works')}>制作物</li>
                         <li onClick={() => navigate('/contact')}>連絡先</li>
                     </ul>
                 </div>
