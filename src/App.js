@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/Root.css';
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      taishinanb\o
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
