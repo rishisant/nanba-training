@@ -7,5 +7,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #D5A743;
+    --color-tertiary: #242528;
+    --color-grey: #B0B0B0;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    width: 120px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu ul li {
+    cursor: pointer;
+    color: var(--color-tertiary);
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu ul li:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-secondary);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-block {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content-block-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content-block-body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-black);
 }
