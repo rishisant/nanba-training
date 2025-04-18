@@ -1,23 +1,27 @@
 import React from "react";
 
 import hometown from "../assets/images/Hometown.jpg"
+import taisei from "../assets/images/nanba_1.jpg"
 
 const Home = () => {
     return (
         <>
             <div className="content-wrapper">
-                <div className="content-block">
-                    <div className="content-block-title">
-                        <h1>難波泰世のポートフォリオ</h1>
+                <div className="hero-section">
+                    <div className="hero-text">
+                        <h1>
+                            TAISEI NANBA
+                        </h1>
+                        <span className="hero-subtitle">
+                            株式会社サインタ・エンジニア
+                        </span>
+                        <p className="hero-bottomtext">
+                            難波泰世、この世界の救い主。
+                        </p>
                     </div>
-                        <div className="flex-row-content">
-                            <div className="content-block-body">
-                                <p>このサイトは、難波泰世のポートフォリオサイトです。</p>
-                                <p>ここでは、私が作成した作品や自己紹介、連絡先などを紹介しています。</p>
-                                <p>ぜひご覧ください。</p>
-                            </div>
-                        </div>
-                    <img className="image-hometown" src={hometown}/>
+                    <div className="hero-image">
+                        <img src={taisei} alt="ヒーロー部分" />
+                    </div>
                 </div>
             </div>
         </>

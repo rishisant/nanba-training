@@ -2,20 +2,16 @@ import React from "react";
 
 const Works = () => {
     return (
-        <>
-            <div className="content-wrapper">
-                <div className="content-block">
-                    <div className="content-block-title">
-                        <h1>難波泰世の制作物</h1>
-                    </div>
-                    <div className="content-block-body">
-                        <p>難波泰世がこれ間瀬に制作したサイトを乗せていきます</p>
-                        <p>ぜひご覧ください。 Coming soon...</p>
-                    </div>
-                </div>
+        <section className="works-section">
+            <div className="works-container">
+                <h2 className="works-title">難波泰世の制作物</h2>
+                <p className="works-description">
+                    難波泰世がこれまでに制作したサイトや作品を掲載していきます。
+                </p>
+                <p className="works-coming-soon">ぜひご覧ください。Coming soon...</p>
             </div>
-        </>
+        </section>
     );
-}
+};
 
 export default Works;
