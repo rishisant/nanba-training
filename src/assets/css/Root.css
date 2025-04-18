@@ -89,3 +89,19 @@
     line-height: 1.6;
     color: var(--color-black);
 }
+
+.flex-row-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image-intro {
+    width: 200px;
+    align-items: center;
+}
+
+.image-hometown {
+    width: 200px;
+    align-items: center;
+}
