@@ -13,7 +13,7 @@
 
     --spacing: 1.5rem;
     --max-width: 1440px;
-    --transition: 0.3s ease-in-out;
+    --transition: 0.5s ease-in-out;
 }
 
 * {
@@ -26,7 +26,7 @@
 html, body {
     height: 100%;
     background-color: var(--color-tertiary);
-    color: var(--color-white);
+    /* color: var(--color-white); */
     scroll-behavior: smooth;
 }
 
@@ -170,7 +170,7 @@ html, body {
 
 .hero-image img {
     max-width: 100%;
-    width: 540px;
+    width: 400px;
     height: auto;
     object-fit: cover;
     border-radius: 1.25rem;
