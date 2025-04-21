@@ -24,6 +24,7 @@ export default function Navbar() {
                 <div className="navbar-menu">
                     <ul>
                         <li onClick={() => navigate('/')}>HOME</li>
+                        <li onClick={() => navigate('/newmenu')}>新MENU</li>
                         <li onClick={() => navigate('/menu')}>MENU</li>
                         <li onClick={() => navigate('/about')}>ABOUT</li>
                         <li onClick={() => navigate('/works')}>ACCESS</li>
