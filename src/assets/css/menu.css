@@ -22,6 +22,22 @@
     
 
 */
+.menu-list {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: left;
+    list-style: none;
+    
+}
+.menu {
+    color: white;
+    padding-bottom: 60px;
+    font-weight: bold;
+
+}
 
 .menu-container {
     display: flex;
@@ -30,7 +46,77 @@
     padding: 2rem;
 }
 
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 500px;
+    max-width: 95%;
+    text-align: center;
+    position: fixed;
 
+    p {
+        text-align: left;
+        font-size: 1.15rem;
+    }
+  }
+
+   .card-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 2rem; */
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    margin: 12px 0;
+ }
+
+
+
+   .modal-card img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    padding-top:20px ;
+    /* margin-bottom: 1rem; */
+  }
+  
+  .modal-card button {
+    font-size: 30px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    /* padding: 8px; */
+    transition: color 0.2s ease;
+    z-index: 11;
+  }
 
 .food-card-container {
     display: flex;
@@ -96,4 +182,22 @@
 .food-card-content h5 {
     font-size: 1.2rem;
     color: #555;
+}
+
+.drink-container{
+    width: 100%;
+display: flex;
+gap: 25px;
+}
+
+.non-alc{
+width: 45%;
+display: flex;
+gap: 10px;
+
+}
+
+.alc{
+display: flex;
+gap: 10px;
 }

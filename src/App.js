@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Works from './pages/Works';
 import Contact from './pages/Contact';
 import Menu from './pages/menu';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="menu" element={<Menu />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }

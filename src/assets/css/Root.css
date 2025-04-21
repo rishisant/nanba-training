@@ -98,11 +98,12 @@ html, body {
     justify-content: center;
     padding: 0 2rem;
     background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(18, 18, 18, 0.95)),
-        url('../images/Hometown.jpg') no-repeat center center fixed;
+        linear-gradient(to bottom, rgba(209, 150, 150, 0.6), rgba(107, 68, 86, 0.95)),
+        url('../images/restaurant-main.jpg') no-repeat center center fixed;
     background-size: cover;
     background-blend-mode: overlay;
     overflow: hidden;
+    /* padding-bottom: 100px; フッターの高さ分空ける */
 }
 
 .hero-section {
@@ -113,7 +114,119 @@ html, body {
     width: 100%;
     max-width: var(--max-width);
     gap: 2rem;
-    padding: 4rem 0;
+    padding: 2rem 0;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.hero-text {
+    flex: 1;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-color: red;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    background: linear-gradient(
+        270deg,
+        var(--color-white) 0%,
+        var(--color-secondary) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background: linear-gradient(
+        90deg,
+        var(--color-white) 0%,
+        var(--color-secondary) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-bottomtext {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    max-width: 50ch;
+    line-height: 1.7;
+    color: var(--color-white);
+}
+
+.hero-description span {
+    color: #881d1d;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.hero-description {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+/* ==========================
+    HERO IMAGE
+========================== */
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hero-image img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.7);
+}
+
+/* ==========================
+    HERO SECTION
+========================== */
+
+.content-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    background:
+        linear-gradient(to bottom, rgba(209, 150, 150, 0.6), rgba(107, 68, 86, 0.95)),
+        url('../images/restaurant-main.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    /* overflow: hidden; ← 削除してスクロール可能に */
+    padding-bottom: 140px; /* フッターの高さ分 */
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--max-width);
+    gap: 2rem;
+    padding: 2rem 0;
     animation: fadeInUp 0.8s ease-in-out;
 }
 
@@ -152,35 +265,23 @@ html, body {
 .hero-bottomtext {
     font-size: 1.2rem;
     margin-top: 2rem;
-    max-width: 35ch;
+    max-width: 50ch;
     line-height: 1.7;
     color: var(--color-white);
 }
 
-/* ==========================
-    HERO IMAGE
-========================== */
-
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero-description {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 140px;
 }
 
-.hero-image img {
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 1.25rem;
-    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
-    transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.hero-image img:hover {
-    transform: scale(1.04);
-    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.7);
+.hero-description span {
+    color: #881d1d;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* ==========================
@@ -214,6 +315,60 @@ html, body {
         font-size: 1rem;
         margin-top: 1rem;
     }
+}
+
+/* ==========================
+    FOOTER
+========================== */
+
+footer {
+    background-color: #00000002;
+    color: #ffffff;
+    padding: 20px;
+    font-family: 'Noto Serif JP', serif;
+    width: 100%;
+    z-index: 999;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #666;
+    font-size: 0.75rem;
+    margin-top: 30px;
 }
 
 /* ==========================

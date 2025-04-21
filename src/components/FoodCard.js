@@ -1,8 +1,8 @@
 import React from 'react';
 
-const FoodCard = ({ image, title, price }) => {
+const FoodCard = ({ image, title, price, onClick }) => {
     return (
-        <div className="food-card">
+        <div className="food-card"  onClick={onClick} style={{ cursor: 'pointer' }}>
             <div className="food-card-image">
                 <img src={image} alt={title} />
             </div>
