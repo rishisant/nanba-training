@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Works from './pages/Works';
 import Contact from './pages/Contact';
 import Menu from './pages/menu';
+import NewMenu from './pages/NewMenu';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="works" element={<Works />} />
           <Route path="contact" element={<Contact />} />
           <Route path="menu" element={<Menu />} />
+          <Route path="newmenu" element={<NewMenu />} />
         </Routes>
       </BrowserRouter>
       <Footer />

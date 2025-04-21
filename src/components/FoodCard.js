@@ -10,7 +10,7 @@ const FoodCard = ({ image, title, price, onClick }) => {
                 <h3>{title}</h3>
                 <h5>{price}
                     <span className="zeikomi">
-                        (税込)
+                        &nbsp;(税込)
                     </span>
                 </h5>
             </div>
