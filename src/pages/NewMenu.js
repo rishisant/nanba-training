@@ -11,7 +11,6 @@ import miso from '../assets/images/miso_ramen.jpg'
 import ocha from '../assets/images/o-i_ocha.jpg'
 import cola from '../assets/images/cola.jpg'
 import colahai from '../assets/images/korahai.jpg'
-
 import {useNavigate} from 'react-router-dom';
 import CardModal from '../components/CardModal';
 
@@ -134,7 +133,7 @@ const NewMenu = () => {
                     className={selectedType === 'nonalc' ? 'active' : ''}
                     onClick={() => setSelectedType('nonalc')}
                 >
-                    飲み物
+                    ソフトドリンク
                 </button>
                 <button
                     className={selectedType === 'alc' ? 'active' : ''}
